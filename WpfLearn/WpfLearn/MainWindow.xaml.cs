@@ -24,6 +24,9 @@ namespace WpfLearn
         public MainWindow()
         {
             InitializeComponent();
+
+            //string str1 = "Biding Template";
+            //btnBidingBehide.DataContext = str1;
         }
 
         //private void TextBlock_MouseLeave(object sender, MouseEventArgs e)

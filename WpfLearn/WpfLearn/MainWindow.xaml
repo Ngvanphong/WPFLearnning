@@ -6,6 +6,16 @@
         xmlns:local="clr-namespace:WpfLearn"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="947.273">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ShareResourceStyle.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    
     <!--<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -125,8 +135,44 @@
             <TextBox Text="{Binding Path=Source, ElementName=image1}" ></TextBox>
             <TextBox x:Name="pathSource" ></TextBox>
             <Button x:Name="setSourceImage" Click="SetSourceImage_Click" Content="LoadForcus"></Button>
-        </StackPanel>
-        
+        </StackPanel>     
     </Grid>-->
+
+    <!--<Grid>
+        <Grid.Resources>
+            <Style x:Key="buttonStyle1" TargetType="Button">
+                <Setter Property="Width" Value="200"></Setter>
+                <Setter Property="Background" Value="Aqua"></Setter>
+            </Style>
+            <Style x:Key="buttonStyle2" TargetType="Button">
+                <Setter Property="Width" Value="200"></Setter>
+                <Setter Property="Background" Value="Beige"></Setter>
+            </Style>
+            <LinearGradientBrush x:Key="BackgroundRadian" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF0C7272" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Resources>
+        <StackPanel>
+            <Button Style="{StaticResource buttonStyle1}"  Content="Button 1"></Button>
+            <Button Style="{StaticResource buttonStyle2}" Content="Button 2"></Button>
+            <Button  Style="{StaticResource btnGlobalStyle1}" Content="Global style"></Button>
+            <Button  Style="{StaticResource btnShareSesourceStyle}" Background="{StaticResource BackgroundRadian}" Content="Share Resource">
+            </Button>
+        </StackPanel>
+    </Grid>-->
+
+    <!--<StackPanel>
+        <StackPanel.Resources>
+            <ControlTemplate x:Key="buttonTemplate">
+                <StackPanel Width="200" Height="200">
+                    <Image  Stretch="Uniform" Source="C:\Users\NGUYENVANPHONG\Desktop\05843f49dbf53183e35adbdc6d5d3c55-2646251004047299068.jpg"></Image>
+                    <TextBlock  Text="{Binding}"></TextBlock>
+                </StackPanel>
+            </ControlTemplate>
+        </StackPanel.Resources>
+        <Button x:Name="btnBidingBehide" Template="{StaticResource buttonTemplate}"></Button>
+    </StackPanel>-->
+    
     
 </Window>
