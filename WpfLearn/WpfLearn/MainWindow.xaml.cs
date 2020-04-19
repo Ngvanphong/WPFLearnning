@@ -42,9 +42,22 @@ namespace WpfLearn
 
 
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
+        //private void Button1_Click(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
+
+        //private void SetSourceImage_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //    image1.Source = new BitmapImage(new Uri(pathSource.Text));
+        //}
+
+        //private void Radio1_Checked(object sender, RoutedEventArgs e)
+        //{
+        //    RadioButton radio = sender as RadioButton;
+        //    var result = radio.Content;
+        //    if (result == null) result = "Radio 1";  
+        //}
     }
 }

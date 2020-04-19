@@ -84,6 +84,49 @@
             </Border>
         </Grid>
     </Grid>-->
-   
+
+    <!--<Grid>
+        <Grid Width="400">
+            <ScrollViewer VerticalScrollBarVisibility="Visible">
+                <StackPanel>
+                    <Button Content="button1"></Button>
+                    <Button Content="button2"></Button>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>-->
+
+    <!--<Grid>
+        <CheckBox x:Name="chechBox1" Content="Check box 1"></CheckBox>
+    </Grid>-->
+    
+    <!--<Grid>
+        <StackPanel x:Name="radio">
+            <RadioButton  x:Name="radio1" IsChecked="True" Content="Radio 1" Checked="Radio1_Checked"></RadioButton>
+            <RadioButton x:Name="radio2" Content="Radio 2" Checked="Radio1_Checked"></RadioButton>
+            <RadioButton x:Name="radio3" Content="Radio 3" Checked="Radio1_Checked"></RadioButton>
+        </StackPanel>
+    </Grid>-->
+    
+    <!--<Grid>
+        <ToggleButton IsChecked="False" Width="200" Height="50" Content="Toggle button 1"></ToggleButton>
+    </Grid>-->
+    
+    <!--<Grid>
+        <StackPanel>
+            <Slider x:Name="slider1" Maximum="100" Value="10"></Slider>
+            <TextBox x:Name="textBox1" Text="{Binding Path=Value, ElementName=slider1}"></TextBox>
+        </StackPanel>
+    </Grid>-->
+    
+    <!--<Grid>
+        <StackPanel>
+            <Image x:Name="image1" Height="200" Stretch="Uniform" Source="C:\Users\NGUYENVANPHONG\Desktop\05843f49dbf53183e35adbdc6d5d3c55-2646251004047299068.jpg"></Image>
+            <TextBox Text="{Binding Path=Source, ElementName=image1}" ></TextBox>
+            <TextBox x:Name="pathSource" ></TextBox>
+            <Button x:Name="setSourceImage" Click="SetSourceImage_Click" Content="LoadForcus"></Button>
+        </StackPanel>
+        
+    </Grid>-->
     
 </Window>
