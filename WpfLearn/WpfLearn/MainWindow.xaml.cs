@@ -29,6 +29,42 @@ namespace WpfLearn
             //btnBidingBehide.DataContext = str1;
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<DataItemCombobox> listData = new List<DataItemCombobox>()
+            {
+                new DataItemCombobox(){Name="Item 1",Value="Value 1"},
+                new DataItemCombobox(){Name="Item 2",Value="Value 2"},
+                new DataItemCombobox(){Name="Item 3",Value="Value 3"}
+            };
+          
+            combobox2.ItemsSource = listData;
+            combobox2.DisplayMemberPath = "Name";
+            combobox2.SelectedValuePath = "Value";
+
+            combobox3.ItemsSource = listData;
+
+            combobox4.ItemsSource = typeof(Colors).GetProperties();
+
+
+        }
+
+        
+        
+
+        private void Combobox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //var item = combobox2.SelectedItem as DataItemCombobox;
+            //var value = combobox2.SelectedValue;          
+        }
+
+        private void Combobox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var item = combobox3.SelectedItem;
+
+        }
+
+
         //private void TextBlock_MouseLeave(object sender, MouseEventArgs e)
         //{
         //    TextBlock textBlock = sender as TextBlock;
@@ -62,5 +98,11 @@ namespace WpfLearn
         //    var result = radio.Content;
         //    if (result == null) result = "Radio 1";  
         //}
+    }
+    public class DataItemCombobox
+    {
+        public string Name { set; get; }
+
+        public string Value { set; get; }
     }
 }

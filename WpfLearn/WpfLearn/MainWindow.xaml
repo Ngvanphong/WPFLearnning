@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfLearn"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="947.273">
+        Title="MainWindow" Height="450" Width="947.273" Loaded="Window_Loaded">
 
     <Window.Resources>
         <ResourceDictionary>
@@ -25,7 +25,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="2" Grid.Row="2" x:Name="textblock1" Text="Input value text wraping" Width="auto" 
+        <TextBlock Grid.Column="0" Grid.Row="1" x:Name="textblock1" Text="Input value text wraping" Width="auto" 
                    Height="20" VerticalAlignment="Top" HorizontalAlignment="Left"
                    TextWrapping="WrapWithOverflow" MouseLeave="TextBlock_MouseLeave"></TextBlock>
         <TextBlock x:Name="textBlock2" >
@@ -173,6 +173,46 @@
         </StackPanel.Resources>
         <Button x:Name="btnBidingBehide" Template="{StaticResource buttonTemplate}"></Button>
     </StackPanel>-->
-    
+
+    <!--<StackPanel>
+        <ComboBox   x:Name="comboBox1" Width="300" Height="30" >
+            <Grid Width="200">
+                <CheckBox HorizontalAlignment="Left" ></CheckBox>
+                <TextBlock HorizontalAlignment="Right" Text="Combobox 1"></TextBlock>
+            </Grid>
+            <Grid Width="200">
+                <CheckBox HorizontalAlignment="Left" ></CheckBox>
+                <TextBlock HorizontalAlignment="Right" Text="Combobox 2"></TextBlock>
+            </Grid>
+        </ComboBox>
+        <ComboBox x:Name="combobox2" SelectionChanged="Combobox2_SelectionChanged">
+        </ComboBox>
+        <ComboBox SelectionChanged="Combobox3_SelectionChanged" x:Name="combobox3">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding Name}"></TextBlock>
+                        <TextBlock Grid.Column="1" Text="{Binding Value}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            
+        </ComboBox>
+
+        <ComboBox x:Name="combobox4" Width="500">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Margin="0.2 0.2 5 0.2" Width="16"></Rectangle>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </StackPanel>-->
     
 </Window>
